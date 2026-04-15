@@ -33,11 +33,11 @@ const Footer = () => {
           </div>
 
           {/* Links Area */}
-          <div className="md:col-span-7 lg:col-span-6 lg:col-start-7 flex flex-col sm:flex-row gap-8 sm:gap-24 justify-between md:justify-end">
+          <div className="md:col-span-7 lg:col-span-6 lg:col-start-7 grid grid-cols-2 gap-6 sm:gap-16">
             
             {/* Navegación Column */}
             <div className="space-y-4">
-              <h4 className="text-xs font-bold text-slate-300 uppercase tracking-widest">Navegación</h4>
+              <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Navegación</h4>
               <ul className="space-y-3">
                 {[
                   { label: 'Solución', href: '#saas-features' },
@@ -53,15 +53,15 @@ const Footer = () => {
             </div>
 
             {/* Ubicación Column */}
-            <div className="space-y-4 max-w-[220px]">
-              <h4 className="text-xs font-bold text-slate-300 uppercase tracking-widest">Ubicación</h4>
-              <div className="flex items-start gap-3">
-                <MapPinIcon className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
+            <div className="space-y-4">
+              <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Ubicación</h4>
+              <div className="flex items-start gap-2.5">
+                <MapPinIcon className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 shrink-0 mt-0.5" />
                 <p className="text-slate-400 text-sm leading-relaxed font-medium">
-                  Córdoba, Argentina<br />Hub de Innovación Tecnológica
+                  Córdoba, Arg.<br />Hub Tecnológico
                 </p>
               </div>
-              <p className="text-[11px] text-slate-500 font-medium italic mt-3 pl-8 border-l border-slate-800 ml-1">
+              <p className="text-[10px] sm:text-[11px] text-slate-500 font-medium italic mt-3 pl-6 border-l border-slate-800 ml-1 leading-tight hidden sm:block">
                 "Operaciones reales, software de primer nivel."
               </p>
             </div>
