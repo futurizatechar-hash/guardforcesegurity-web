@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/[0.04] backdrop-blur-md border border-white/10 rounded-2xl shadow-xl transition-all duration-500;
+  }
+  .glass-card-hover {
+    @apply hover:border-[#00e5ff]/40 hover:shadow-glow-sm hover:bg-white/[0.07];
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#00e5ff] to-blue-500 text-transparent bg-clip-text font-extrabold;
+  }
+  .btn-primary {
+    @apply bg-[#00e5ff] text-[#030617] font-black py-3.5 px-7 rounded-xl transition-all duration-300 hover:bg-[#00c4cc] hover:shadow-glow flex items-center justify-center gap-2 text-sm;
+  }
+  .section-container {
+    @apply w-full max-w-7xl mx-auto px-5 sm:px-6;
+  }
+}
